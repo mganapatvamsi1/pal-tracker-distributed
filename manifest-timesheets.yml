@@ -4,7 +4,7 @@ applications:
   host: timesheets-pal-mg
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-mg.apps.pikes.pal.pivotal.io
+
   services:
   - tracker-timesheets-database
+  - tracker-service-registry
