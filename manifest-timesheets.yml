@@ -1,10 +1,10 @@
 applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
-  host: timesheets-pal-manig
+  host: timesheets-pal-mg
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-manig.apps.pikes.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-mg.apps.pikes.pal.pivotal.io
   services:
   - tracker-timesheets-database
