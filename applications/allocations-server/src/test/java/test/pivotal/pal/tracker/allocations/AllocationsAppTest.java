@@ -2,10 +2,11 @@ package test.pivotal.pal.tracker.allocations;
 
 import io.pivotal.pal.tracker.allocations.App;
 import org.junit.Test;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.web.client.RestTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
+@EnableCircuitBreaker
 public class AllocationsAppTest {
 
     @Test
