@@ -23,5 +23,9 @@ dependencies {
 
     compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
 
+    compile "org.springframework.cloud:spring-cloud-starter-oauth2"
+    compile "io.pivotal.spring.cloud:spring-cloud-sso-connector:$springCloudSsoVersion"
+
+
     testCompile project(":components:test-support")
 }
